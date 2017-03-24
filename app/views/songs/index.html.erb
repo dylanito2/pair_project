@@ -1,0 +1,6 @@
+<h1>All The Songs!!!</h1>
+<ul>
+  <% @songs.each do |song|  %>
+  <li><%= link_to song.name, song %></li>
+  <% end %>
+</ul>
