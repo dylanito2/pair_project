@@ -14,7 +14,11 @@
     <li><%= link_to genre.name, genre %></li>
     <% end %>
   </ul>
+  <h4>Click <%=link_to "here", edit_artist_path%> to edit artist info.</h4>
+
   <h4>Click <%=link_to "here", @artist, :method=> :delete%> to delete artist.</h4>
+
+
 <%else%>
 <h4>Artist not found.  Click <%=link_to "here", artists_path%> to see all the artists.</h4>
 
