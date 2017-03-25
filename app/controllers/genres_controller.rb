@@ -1,5 +1,5 @@
 class GenresController < ApplicationController
-    before_action :set_genre, only: [:show, :edit, :update]
+    before_action :set_genre, only: [:show, :destroy]
 
   def index
     @genres = Genre.all
@@ -22,16 +22,12 @@ class GenresController < ApplicationController
     end
   end
 
-  def edit
-
-  end
-
-  def update
-
-  end
-
-  def delete
-
+  def destroy
+    @genre.song_genres.each do |song_genre|
+      song_genre.destroy
+    end
+    @genre.destroy
+    redirect_to genres_path
   end
 
   private
