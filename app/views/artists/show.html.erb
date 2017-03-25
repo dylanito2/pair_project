@@ -1,15 +1,25 @@
-<h1><%= @artist.name %></h1>
+<% if @artist %>
+  <h1><%= @artist.name %></h1>
 
-<h3>Songs:</h3>
-<ul>
-  <% @artist.songs.each do |song|  %>
-  <li><%= link_to song.name, song %></li>
-  <% end %>
-</ul>
+  <h3>Songs:</h3>
+  <ul>
+    <% @artist.songs.each do |song|  %>
+    <li><%= link_to song.name, song %></li>
+    <% end %>
+  </ul>
 
-<h3>Genres:</h3>
-<ul>
-  <% @artist.genres.uniq.each do |genre|  %>
-  <li><%= link_to genre.name, genre %></li>
-  <% end %>
-</ul>
+  <h3>Genres:</h3>
+  <ul>
+    <% @artist.genres.uniq.each do |genre|  %>
+    <li><%= link_to genre.name, genre %></li>
+    <% end %>
+  </ul>
+  <h4>Click <%=link_to "here", edit_artist_path%> to edit artist info.</h4>
+
+  <h4>Click <%=link_to "here", @artist, :method=> :delete%> to delete artist.</h4>
+
+
+<%else%>
+<h4>Artist not found.  Click <%=link_to "here", artists_path%> to see all the artists.</h4>
+
+<%end%>
