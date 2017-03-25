@@ -1,0 +1,25 @@
+edit page
+<h1>Edit your Song!!</h1>
+<%= form_for @song do |f| %>
+<p>Name: <%= f.text_field :name %></p>
+<p><%= collection_select(:song, :artist_id, Artist.all, :id, :name, prompt: true) %></p>
+<p>Artist: <%= text_field_tag "artist[name]" %></p>
+<p>Genres:</p>
+<p><%= collection_check_boxes(:song, :genre_ids, Genre.all, :id, :name) %></p>
+<p>New Genre: <%= text_field_tag "genre[name]" %></p>
+<%= f.submit %>
+
+<% end %>
+
+<script>
+$(function() {
+  $('#artist_name').on('keyup', function(){
+    if($(this).val() == '')
+
+    $('#song_artist_id').removeAttr('disabled');
+    else
+    $('#song_artist_id').attr("disabled","disabled");
+    $('#song_artist_id').val('');
+  })
+})
+</script>
