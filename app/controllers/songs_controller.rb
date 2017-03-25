@@ -17,7 +17,7 @@ class SongsController < ApplicationController
     @song = Song.new(name: song_params[:name])
     genres = song_params[:genre_ids]
     genres.delete('')
-    @song.artist = @artist
+    @song.artist = @artist #check this out
     @song.genre_ids = genres
     unless genre_params[:name].blank?
       @song.genres << Genre.create(genre_params)
@@ -35,15 +35,27 @@ class SongsController < ApplicationController
   end
 
   def edit
-
+    # @song has been set by before_action
   end
 
   def update
-
+    @song.update(song_params)
+    unless genre_params[:name].blank?
+      @song.genres << Genre.create(genre_params)
+    end
+    if artist_params[:name].blank?
+      @song.artist = Artist.find(song_params[:artist_id])
+    else
+      @song.artist = Artist.find_or_create_by(artist_params)
+    end
+    if @song.save
+      redirect_to @song
+    else
+      render :edit
+    end
   end
 
   def delete
-
   end
 
 
