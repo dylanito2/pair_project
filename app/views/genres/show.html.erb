@@ -1,15 +1,23 @@
-<h1><%= @genre.name %></h1>
+<%if @genre%>
+  <h1><%= @genre.name %></h1>
 
-<h3>Songs</h3>
-<ul>
-  <% @genre.songs.each do |song|  %>
-  <li><%= link_to song.name, song %></li>
-  <% end %>
-</ul>
+  <h3>Songs</h3>
+  <ul>
+    <% @genre.songs.each do |song|  %>
+    <li><%= link_to song.name, song %></li>
+    <% end %>
+  </ul>
 
-<h3>Artists</h3>
-<ul>
-  <% @genre.artists.each do |artist|  %>
-  <li><%= link_to artist.name, artist %></li>
-  <% end %>
-</ul>
+  <h3>Artists</h3>
+  <ul>
+    <% @genre.artists.each do |artist|  %>
+    <li><%= link_to artist.name, artist %></li>
+    <% end %>
+  </ul>
+  <h4>Click <%=link_to "here", edit_genre_path%> to edit genre info.</h4>
+
+  <h4>Click <%=link_to "here", @genre, :method=> :delete%> to delete genre.</h4>
+<%else%>
+  <h4>Genre not found.  Click <%=link_to "here", genres_path%> to see all the genres.</h4>
+
+<%end%>
