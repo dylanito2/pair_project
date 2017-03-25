@@ -4042,3 +4042,1318 @@ Processing by SongsController#edit as HTML
 Completed 200 OK in 51ms (Views: 47.4ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/songs/2" for ::1 at 2017-03-25 10:56:49 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  Rendered songs/show.html.erb within layouts/application (265.6ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `song' for #<#<Class:0x007fbe4892b0b8>:0x007fbe48928ea8>
+Did you mean?  @song):
+    6: <% end  %>
+    7: </ul>
+    8: <h4>Click <%=link_to "here", edit_song_path%> to edit song info.</h4>
+    9: <h4>Click <%=link_to "here", song%> to delete song.</h4>
+  
+app/views/songs/show.html.erb:9:in `_app_views_songs_show_html_erb__1156169694038533485_70227619045000'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.9ms)
+Started GET "/songs/2" for ::1 at 2017-03-25 10:57:10 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  Rendered songs/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/songs/2" for ::1 at 2017-03-25 10:57:14 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  Rendered songs/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/songs/2" for ::1 at 2017-03-25 10:59:20 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  Rendered songs/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/artists/2" for ::1 at 2017-03-25 10:59:25 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (3.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered artists/show.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 60ms (Views: 52.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/songs/2" for ::1 at 2017-03-25 10:59:26 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  Rendered songs/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 71ms (Views: 60.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/songs/2" for ::1 at 2017-03-25 10:59:28 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  Rendered songs/show.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 71ms (Views: 65.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/songs/2" for ::1 at 2017-03-25 11:01:17 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  Rendered songs/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 33ms (Views: 27.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/songs/2" for ::1 at 2017-03-25 11:01:21 -0400
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for SongsController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+Started DELETE "/songs/2" for ::1 at 2017-03-25 11:01:49 -0400
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for SongsController):
+  
+actionpack (5.0.2) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+Started DELETE "/songs/2" for ::1 at 2017-03-25 11:01:59 -0400
+Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vtf6zJkQB3Oi+P2VqkZrJukvetVusxMl1B8Xe0Frr+q8ASRbyRSPWfMsy62dFLeMWGNETbtYwET+PhvhxN7/vA==", "id"=>"2"}
+Completed 500 Internal Server Error in 25567ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:60:in `destroy'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.1ms)
+Started DELETE "/songs/2" for ::1 at 2017-03-25 11:02:30 -0400
+Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vtf6zJkQB3Oi+P2VqkZrJukvetVusxMl1B8Xe0Frr+q8ASRbyRSPWfMsy62dFLeMWGNETbtYwET+PhvhxN7/vA==", "id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.9ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 7738ms (ActiveRecord: 6.8ms)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "songs" violates foreign key constraint "fk_rails_d21ad1d041" on table "song_genres"
+DETAIL:  Key (id)=(2) is still referenced from table "song_genres".
+: DELETE FROM "songs" WHERE "songs"."id" = $1):
+  
+app/controllers/songs_controller.rb:60:in `destroy'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.1ms)
+Started DELETE "/songs/2" for ::1 at 2017-03-25 11:03:29 -0400
+Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vtf6zJkQB3Oi+P2VqkZrJukvetVusxMl1B8Xe0Frr+q8ASRbyRSPWfMsy62dFLeMWGNETbtYwET+PhvhxN7/vA==", "id"=>"2"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  [1m[36mSongGenre Load (0.4ms)[0m  [1m[34mSELECT "song_genres".* FROM "song_genres" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 86330ms (ActiveRecord: 11.7ms)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "songs" violates foreign key constraint "fk_rails_d21ad1d041" on table "song_genres"
+DETAIL:  Key (id)=(2) is still referenced from table "song_genres".
+: DELETE FROM "songs" WHERE "songs"."id" = $1):
+  
+app/controllers/songs_controller.rb:60:in `destroy'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.0ms)
+Started DELETE "/songs/2" for ::1 at 2017-03-25 11:05:00 -0400
+Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vtf6zJkQB3Oi+P2VqkZrJukvetVusxMl1B8Xe0Frr+q8ASRbyRSPWfMsy62dFLeMWGNETbtYwET+PhvhxN7/vA==", "id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSongGenre Load (0.3ms)[0m  [1m[34mSELECT "song_genres".* FROM "song_genres" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 38477ms (ActiveRecord: 5.3ms)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "songs" violates foreign key constraint "fk_rails_d21ad1d041" on table "song_genres"
+DETAIL:  Key (id)=(2) is still referenced from table "song_genres".
+: DELETE FROM "songs" WHERE "songs"."id" = $1):
+  
+app/controllers/songs_controller.rb:62:in `destroy'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.9ms)
+Started DELETE "/songs/2" for ::1 at 2017-03-25 11:06:14 -0400
+Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vtf6zJkQB3Oi+P2VqkZrJukvetVusxMl1B8Xe0Frr+q8ASRbyRSPWfMsy62dFLeMWGNETbtYwET+PhvhxN7/vA==", "id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSongGenre Load (0.8ms)[0m  [1m[34mSELECT "song_genres".* FROM "song_genres" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "song_genres" WHERE "song_genres"."id" = $1[0m  [["id", 10]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 2]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+No template found for SongsController#destroy, rendering head :no_content
+Completed 204 No Content in 414738ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/artists/2" for ::1 at 2017-03-25 11:13:21 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered artists/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 45ms (Views: 36.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/songs/2/edit" for ::1 at 2017-03-25 11:13:37 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  Rendered songs/edit.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: edit page
+    2: <h1>Edit your Song!!</h1>
+    3: <%= form_for @song do |f| %>
+    4: <p>Name: <%= f.text_field :name %></p>
+    5: <p><%= collection_select(:song, :artist_id, Artist.all, :id, :name, prompt: true) %></p>
+    6: <p>Artist: <%= text_field_tag "artist[name]" %></p>
+  
+app/views/songs/edit.html.erb:3:in `_app_views_songs_edit_html_erb__952419800171485287_70227636063520'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.0ms)
+Started GET "/songs/2" for ::1 at 2017-03-25 11:13:40 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @song.name %></h1>
+    2: <h2><%= link_to @song.artist.name, @song.artist %></h2>
+    3: <ul>
+    4: <% @song.genres.each do |genre| %>
+  
+app/views/songs/show.html.erb:1:in `_app_views_songs_show_html_erb__1156169694038533485_70227625546480'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.2ms)
+Started GET "/artists" for ::1 at 2017-03-25 11:13:45 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 23.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/2" for ::1 at 2017-03-25 11:13:47 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (2.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  [1m[36mGenre Load (3.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered artists/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 57ms (Views: 48.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/songs" for ::1 at 2017-03-25 11:13:53 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (1.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 27ms (Views: 21.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/songs/new" for ::1 at 2017-03-25 11:13:58 -0400
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered songs/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/songs" for ::1 at 2017-03-25 11:14:11 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dSjLhhu//7uVYzyivQii4yo5Z6Ur05ykITavyxFNLWaf/hURS7t3kcS3CpqKWn5Jm3VZPf44T8ULF6NRlPh9MA==", "song"=>{"name"=>"Since I Fell", "artist_id"=>"2", "genre_ids"=>["", "3"]}, "artist"=>{"name"=>""}, "genre"=>{"name"=>""}, "commit"=>"Create Song"}
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 3[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist_id") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Since I Fell"], ["artist_id", 2]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "song_genres" ("song_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["song_id", 4], ["genre_id", 3]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/songs/4
+Completed 302 Found in 25ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/songs/4" for ::1 at 2017-03-25 11:14:11 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 4]]
+  Rendered songs/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/songs/4" for ::1 at 2017-03-25 11:14:45 -0400
+Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tJuLNIgZ0wB/qewg8nXZZZqUCqDCYQ7Th91fhEpLQzheTVWj2B1bKi592hjFJwXPK9g0OBeK3bKt/FMez/4Tbg==", "id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mSongGenre Load (0.6ms)[0m  [1m[34mSELECT  "song_genres".* FROM "song_genres" WHERE "song_genres"."song_id" = $1 ORDER BY "song_genres"."id" ASC LIMIT $2[0m  [["song_id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "song_genres" WHERE "song_genres"."id" = $1[0m  [["id", 11]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 4]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/songs
+Completed 302 Found in 5631ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/songs" for ::1 at 2017-03-25 11:14:51 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/new" for ::1 at 2017-03-25 11:15:26 -0400
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered songs/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 51ms (Views: 40.4ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/songs" for ::1 at 2017-03-25 11:15:39 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jga6i01wBOXlJwZNkSr4i3UGxeV1Uwoa0tze5g1n5gzM0GQcHXSMz7TzMHWmeCQhxEr7faC42Xv4/dJ8iNK2Wg==", "song"=>{"name"=>"tester", "genre_ids"=>["", "3", "4", "5"]}, "artist"=>{"name"=>"big chief"}, "genre"=>{"name"=>""}, "commit"=>"Create Song"}
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" IN (3, 4, 5)[0m
+  [1m[36mArtist Load (2.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = $1 LIMIT $2[0m  [["name", "big chief"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "artists" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "big chief"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist_id") VALUES ($1, $2) RETURNING "id"[0m  [["name", "tester"], ["artist_id", 6]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "song_genres" ("song_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["song_id", 5], ["genre_id", 3]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "song_genres" ("song_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["song_id", 5], ["genre_id", 4]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "song_genres" ("song_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["song_id", 5], ["genre_id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/songs/5
+Completed 302 Found in 26ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/songs/5" for ::1 at 2017-03-25 11:15:40 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 5]]
+  Rendered songs/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/songs/5" for ::1 at 2017-03-25 11:15:45 -0400
+Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UAFJnfnprDx8o1rUlNouSdlKhARYYrNVJlq+0XsLybK615cKqe0kFi13bOyjiPLjaAa6nI2JYDQMe7JL/r6Z5A==", "id"=>"5"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSongGenre Load (0.8ms)[0m  [1m[34mSELECT  "song_genres".* FROM "song_genres" WHERE "song_genres"."song_id" = $1 ORDER BY "song_genres"."id" ASC LIMIT $2[0m  [["song_id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "song_genres" WHERE "song_genres"."id" = $1[0m  [["id", 12]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 3865ms (ActiveRecord: 5.3ms)
+
+
+  
+ActiveRecord::InvalidForeignKey (PG::ForeignKeyViolation: ERROR:  update or delete on table "songs" violates foreign key constraint "fk_rails_d21ad1d041" on table "song_genres"
+DETAIL:  Key (id)=(5) is still referenced from table "song_genres".
+: DELETE FROM "songs" WHERE "songs"."id" = $1):
+  
+app/controllers/songs_controller.rb:62:in `destroy'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.3ms)
+Started DELETE "/songs/5" for ::1 at 2017-03-25 11:16:48 -0400
+Processing by SongsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UAFJnfnprDx8o1rUlNouSdlKhARYYrNVJlq+0XsLybK615cKqe0kFi13bOyjiPLjaAa6nI2JYDQMe7JL/r6Z5A==", "id"=>"5"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSongGenre Load (0.4ms)[0m  [1m[34mSELECT "song_genres".* FROM "song_genres" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 5]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "song_genres" WHERE "song_genres"."id" = $1[0m  [["id", 13]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "song_genres" WHERE "song_genres"."id" = $1[0m  [["id", 14]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/songs
+Completed 302 Found in 30ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/songs" for ::1 at 2017-03-25 11:16:48 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 29.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/genres/3" for ::1 at 2017-03-25 11:17:44 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 3]]
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 3]]
+  Rendered genres/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 48ms (Views: 37.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/genres" for ::1 at 2017-03-25 11:17:46 -0400
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered genres/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres/3" for ::1 at 2017-03-25 11:17:49 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 3]]
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 3]]
+  Rendered genres/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 54ms (Views: 50.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/genres/4" for ::1 at 2017-03-25 11:17:52 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (5.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 4]]
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 4]]
+  Rendered genres/show.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 61ms (Views: 52.0ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/genres/5" for ::1 at 2017-03-25 11:17:54 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (1.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 5]]
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 5]]
+  Rendered genres/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 61ms (Views: 54.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/songs/3" for ::1 at 2017-03-25 11:19:53 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 3]]
+  Rendered songs/show.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/artists/3" for ::1 at 2017-03-25 11:19:56 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (2.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  [1m[36mGenre Load (4.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered artists/show.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 67ms (Views: 53.7ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/songs/5" for ::1 at 2017-03-25 11:20:12 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @song.name %></h1>
+    2: <h2><%= link_to @song.artist.name, @song.artist %></h2>
+    3: <ul>
+    4: <% @song.genres.each do |genre| %>
+  
+app/views/songs/show.html.erb:1:in `_app_views_songs_show_html_erb__1156169694038533485_70227642051680'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.9ms)
+Started GET "/songs/4" for ::1 at 2017-03-25 11:22:16 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @song.name %></h1>
+    2: <h2><%= link_to @song.artist.name, @song.artist %></h2>
+    3: <ul>
+    4: <% @song.genres.each do |genre| %>
+  
+app/views/songs/show.html.erb:1:in `_app_views_songs_show_html_erb__1156169694038533485_70227613862280'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.0ms)
+Started GET "/artists" for ::1 at 2017-03-25 11:22:19 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 54ms (Views: 40.6ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/songs/2" for ::1 at 2017-03-25 11:22:20 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @song.name %></h1>
+    2: <h2><%= link_to @song.artist.name, @song.artist %></h2>
+    3: <ul>
+    4: <% @song.genres.each do |genre| %>
+  
+app/views/songs/show.html.erb:1:in `_app_views_songs_show_html_erb__1156169694038533485_70227558716180'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.8ms)
+Started GET "/genres" for ::1 at 2017-03-25 11:22:26 -0400
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered genres/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 39ms (Views: 23.0ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/genres/5" for ::1 at 2017-03-25 11:22:30 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 5]]
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 5]]
+  Rendered genres/show.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 68ms (Views: 48.7ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/genres/5" for ::1 at 2017-03-25 11:23:07 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 5]]
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 5]]
+  Rendered genres/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/genres/5" for ::1 at 2017-03-25 11:23:09 -0400
+Processing by GenresController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XaOe2Et20mazB0SEZLcEjhE7pY7FEtRCIROYL5WSC9y3dUBPG3JaTOLTcrxT5dgkoHebFhD5ByMLMpS1ECdbig==", "id"=>"5"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `song_genres' for nil:NilClass):
+  
+app/controllers/genres_controller.rb:34:in `destroy'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.0ms)
+Started DELETE "/genres/5" for ::1 at 2017-03-25 11:23:33 -0400
+Processing by GenresController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XaOe2Et20mazB0SEZLcEjhE7pY7FEtRCIROYL5WSC9y3dUBPG3JaTOLTcrxT5dgkoHebFhD5ByMLMpS1ECdbig==", "id"=>"5"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mSongGenre Load (0.3ms)[0m  [1m[34mSELECT "song_genres".* FROM "song_genres" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 5]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/genres
+Completed 302 Found in 22ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/genres" for ::1 at 2017-03-25 11:23:34 -0400
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered genres/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/genres/3" for ::1 at 2017-03-25 11:24:43 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 3]]
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 3]]
+  Rendered genres/show.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 54ms (Views: 40.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 11:24:52 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for ::1 at 2017-03-25 11:24:54 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (1.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 47ms (Views: 35.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/genres/new" for ::1 at 2017-03-25 11:25:05 -0400
+Processing by GenresController#new as HTML
+  Rendering genres/new.html.erb within layouts/application
+  Rendered genres/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/genres" for ::1 at 2017-03-25 11:25:12 -0400
+Processing by GenresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yxcexyEQFMA3Acw4VGM5vNvB1udDGldhG/xnnpA80WIgVYaU/UXrLAapISYUWWGoAES0JXCMwJEAOBgFTGYLDQ==", "genre"=>{"name"=>"funkads"}, "commit"=>"Create Genre"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "genres" ("name") VALUES ($1) RETURNING "id"[0m  [["name", "funkads"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/genres/6
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/genres/6" for ::1 at 2017-03-25 11:25:12 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 6]]
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 6]]
+  Rendered genres/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/genres/6" for ::1 at 2017-03-25 11:25:17 -0400
+Processing by GenresController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bdbKMOGbes5+4KF7Rv5JEEKsLsCi/DR+sAFGXQsTr6WHABSnsZ/y5C80l0NxrJW68+AQWHcX5x+aIErHjqb/8w==", "id"=>"6"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mSongGenre Load (0.2ms)[0m  [1m[34mSELECT "song_genres".* FROM "song_genres" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 6]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 6]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/genres
+Completed 302 Found in 9ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/genres" for ::1 at 2017-03-25 11:25:17 -0400
+Processing by GenresController#index as HTML
+  Rendering genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered genres/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/genres/6" for ::1 at 2017-03-25 11:25:20 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  Rendered genres/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @genre.name %></h1>
+    2: 
+    3: <h3>Songs</h3>
+    4: <ul>
+  
+app/views/genres/show.html.erb:1:in `_app_views_genres_show_html_erb__3886544532929773347_70227565051300'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.7ms)
+Started GET "/" for ::1 at 2017-03-25 11:25:32 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for ::1 at 2017-03-25 11:25:34 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/new" for ::1 at 2017-03-25 11:25:36 -0400
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mGenre Load (1.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  Rendered songs/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/songs" for ::1 at 2017-03-25 11:25:53 -0400
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AAFvq/6MKHUqzJvybfYzikonA+8vp8y7D1pPqU8Ot8nuIGQDAzYELjrMPy5n3ifhHl1CX/jX7nOBMLeE79lqeQ==", "song"=>{"name"=>"Since I Fell for You", "artist_id"=>"2", "genre_ids"=>["", "3"]}, "artist"=>{"name"=>""}, "genre"=>{"name"=>""}, "commit"=>"Create Song"}
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = 3[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist_id") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Since I Fell for You"], ["artist_id", 2]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "song_genres" ("song_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["song_id", 6], ["genre_id", 3]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/songs/6
+Completed 302 Found in 20ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/songs/6" for ::1 at 2017-03-25 11:25:53 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 6]]
+  Rendered songs/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs/6/edit" for ::1 at 2017-03-25 11:25:55 -0400
+Processing by SongsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering songs/edit.html.erb within layouts/application
+  [1m[36mArtist Load (2.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "genres".id FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 6]]
+  Rendered songs/edit.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 54ms (Views: 47.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2017-03-25 11:27:04 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists" for ::1 at 2017-03-25 11:27:06 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 53ms (Views: 41.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/artists/5" for ::1 at 2017-03-25 11:27:09 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 5]]
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 5]]
+  Rendered artists/show.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 84ms (Views: 67.1ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/artists" for ::1 at 2017-03-25 11:27:40 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists/6" for ::1 at 2017-03-25 11:27:42 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (2.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 6]]
+  [1m[36mGenre Load (1.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 6]]
+  Rendered artists/show.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 63ms (Views: 54.8ms | ActiveRecord: 4.7ms)
+
+
+Started DELETE "/artists/6" for ::1 at 2017-03-25 11:27:44 -0400
+Processing by ArtistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"renpCCnL2dDxb6F0XnWqeuLrHfZqGaHX86p/tZlNdlpHPzefec9R+qC7l0xpJ3bQU6cjbr/ycrbZi3MvHPgmDA==", "id"=>"6"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 6]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 5ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/artists" for ::1 at 2017-03-25 11:27:44 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/5" for ::1 at 2017-03-25 11:27:46 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 5]]
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 5]]
+  Rendered artists/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 46ms (Views: 42.5ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/artists/5" for ::1 at 2017-03-25 11:27:47 -0400
+Processing by ArtistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q4DNM1yM/ebqSNwha/cBXcB7Lw5aYdT/+tBhKDWlqHFBVhOkDIh1zLuc6hlcpd33cTcRlo+KB57Q8W2ysBD4Jw==", "id"=>"5"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/artists" for ::1 at 2017-03-25 11:27:47 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/4" for ::1 at 2017-03-25 11:27:48 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  Rendered artists/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/artists/4" for ::1 at 2017-03-25 11:27:50 -0400
+Processing by ArtistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z2PuQ4w3JtB5/w46fJ69boMh1903ekySEvdxsNFSd+WNtTDU3DOu+igrOAJLzGHEMm3pReKRn/M41n0qVOcnsw==", "id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 4]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/artists" for ::1 at 2017-03-25 11:27:50 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/3" for ::1 at 2017-03-25 11:27:51 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  [1m[36mGenre Load (1.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered artists/show.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 56ms (Views: 49.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/genres/4" for ::1 at 2017-03-25 11:27:53 -0400
+Processing by GenresController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering genres/show.html.erb within layouts/application
+  [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 4]]
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" INNER JOIN "songs" ON "artists"."id" = "songs"."artist_id" INNER JOIN "song_genres" ON "songs"."id" = "song_genres"."song_id" WHERE "song_genres"."genre_id" = $1[0m  [["genre_id", 4]]
+  Rendered genres/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 73ms (Views: 63.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/songs/3" for ::1 at 2017-03-25 11:27:56 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 3]]
+  Rendered songs/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 69ms (Views: 64.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/artists/4" for ::1 at 2017-03-25 11:28:08 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @artist.name %></h1>
+    2: 
+    3: <h3>Songs:</h3>
+    4: <ul>
+  
+app/views/artists/show.html.erb:1:in `_app_views_artists_show_html_erb___626264544652239504_70227619661060'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.5ms)
+Started GET "/artists/4" for ::1 at 2017-03-25 11:29:42 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/johnshelby/Desktop/project_mode/pair_project/pair_project/app/views/artists/show.html.erb:21: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/johnshelby/Desktop/project_mode/pair_project/pair_project/app/views/artists/show.html.erb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/artists/show.html.erb:21: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/artists/show.html.erb:23: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.3ms)
+Started GET "/artists/4" for ::1 at 2017-03-25 11:29:54 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (106.8ms)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `redirect_to' for #<#<Class:0x007fbe4b43d0d0>:0x007fbe45772cb0>):
+    16:   </ul>
+    17:   <h4>Click <%=link_to "here", @artist, :method=> :delete%> to delete artist.</h4>
+    18: <%else%>
+    19:   <%redirect_to artists_path%>
+    20: <%end%>
+  
+app/views/artists/show.html.erb:19:in `_app_views_artists_show_html_erb___626264544652239504_70227592977680'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.6ms)
+Started GET "/artists/4" for ::1 at 2017-03-25 11:30:23 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artists" for ::1 at 2017-03-25 11:30:27 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 46.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/3" for ::1 at 2017-03-25 11:30:29 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (3.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  [1m[36mGenre Load (1.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 3]]
+  Rendered artists/show.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 54ms (Views: 47.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/artists/78" for ::1 at 2017-03-25 11:30:35 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists/89" for ::1 at 2017-03-25 11:32:16 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"89"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  Rendered artists/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artists" for ::1 at 2017-03-25 11:32:18 -0400
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  Rendered artists/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/songs" for ::1 at 2017-03-25 11:32:47 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/3" for ::1 at 2017-03-25 11:32:48 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 3]]
+  Rendered songs/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/songs/39" for ::1 at 2017-03-25 11:32:52 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1><%= @song.name %></h1>
+    2: <h2><%= link_to @song.artist.name, @song.artist %></h2>
+    3: <ul>
+    4: <% @song.genres.each do |genre| %>
+  
+app/views/songs/show.html.erb:1:in `_app_views_songs_show_html_erb__1156169694038533485_70227623860720'
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/johnshelby/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.7ms)
+Started GET "/songs/39" for ::1 at 2017-03-25 11:34:51 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  Rendered songs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs" for ::1 at 2017-03-25 11:34:52 -0400
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (2.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 63ms (Views: 58.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/songs/6" for ::1 at 2017-03-25 11:34:54 -0400
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering songs/show.html.erb within layouts/application
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" WHERE "song_genres"."song_id" = $1[0m  [["song_id", 6]]
+  Rendered songs/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 58ms (Views: 54.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/artists/2" for ::1 at 2017-03-25 11:34:56 -0400
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres" INNER JOIN "song_genres" ON "genres"."id" = "song_genres"."genre_id" INNER JOIN "songs" ON "song_genres"."song_id" = "songs"."id" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  Rendered artists/show.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 61ms (Views: 55.8ms | ActiveRecord: 1.9ms)
+
+
